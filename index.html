@@ -12,6 +12,19 @@
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
 <script>dayjs.locale('pt-br')</script>
 
+<form onsubmit="adicionarParticipante(event)">
+  <fieldset>
+    <legend>Inscrição</legend>
+
+    <div>
+      <input type="text" placeholder="Nome completo" name="nome" required>
+
+      <input type="email" placeholder="email" name="email" required>
+
+      <button>Realizar Inscrição</button>
+    </div>
+  </fieldset>
+</form>
 
 <table width = "100%">
   <thead text-align = "left">

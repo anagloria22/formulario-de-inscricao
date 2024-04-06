@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+:root {
+    --borda: 1px solid #ffffff1a;
+}
+
 html {
     padding-bottom: 9px;
 }
@@ -15,9 +19,46 @@ body {
     font-weight: bolder;
 }
 
+.container {
+    max-width: 690px;
+    margin: 0 auto;
+    padding: 20px 32px;
+}
+
+header {
+    padding: 20px 0px;
+}
+
+form {
+    border: var(--borda);
+    border-inline: none;
+    padding-bottom: 10px;
+}
+
 fieldset {
     border: 3px solid purple;
     border-radius: 10px;
+}
+
+fieldset > div {
+    display: flex;
+    gap: 12px;
+}
+
+.input-wrapper {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border: var(--borda);
+    border-radius: 10px;
+    padding: 8px 12px;
+    font: 400 14px/150% 'candara', sans-serif;
+    color: #c4c4cc;
+}
+
+input {
+    all: unset;
 }
 
 table {
@@ -38,7 +79,7 @@ thead th, tbody td {
 }
 
 tbody td {
-    border-top: 1px solid #ffffff1a;
+    border-top: var(--borda);
     color: #c4c4cc;
 }
 
@@ -63,6 +104,15 @@ input {
 }
 
 button {
+    width: fit-content;
     border: 0px;
-    border-radius: 5px;
+    border-radius: 10px;
+    background: #f48f56;
+    padding: 7px 20px;
+    font: 700 12px/24px 'candara', sans-serif;
+    color: #00292e;
+}
+
+button:hover {
+    background: #f37c37;
 }

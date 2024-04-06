@@ -137,9 +137,8 @@ let participantes = [
 
     if(confirm(mensagemConfirmacao) == false) {
       return
-      
     }
-
+      
     alert(resultado)
 
     const participante = participantes.find((p) => p.email == event.target.dataset.email)

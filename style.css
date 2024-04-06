@@ -1,12 +1,16 @@
 @charset "UTF-8";
 
+html {
+    padding-bottom: 9px;
+}
+
 body, table, input, button {
     font: 16px/140% sans-serif;
     font-family: candara;
 }
 
 body {
-    background-image: linear-gradient(#69F1ED, #C7B5C9, #F8519E);
+    background: black;
     color: white;
     font-weight: bolder;
 }
@@ -20,8 +24,45 @@ table {
     margin-top: 10px;
     border: 3px solid purple;
     border-radius: 10px;
+    border-collapse: collapse;
+}
+
+table thead {
+    font-size: 14px;
+    line-height: 16px;
+    text-align: left;
+}
+
+thead th, tbody td {
+    padding: 12px 16px;
+}
+
+tbody td {
+    border-top: 1px solid #ffffff1a;
+    color: #c4c4cc;
+}
+
+tbody td strong {
+    color: white;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+tbody td button {
+    all: unset;
+    color: #9ff9cc;
+}
+
+tbody td button:hover {
+    text-decoration: underline;
+}
+
+input {
+    border: 0px;
+    border-radius: 5px;
 }
 
 button {
+    border: 0px;
     border-radius: 5px;
 }
